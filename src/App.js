@@ -78,16 +78,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <div>
-          <Jumbotron className="jumbotron-background">          
-              <h1 className="display-3">react-excel-renderer</h1>
-              <p className="lead">Welcome to the demo of react-excel-renderer.</p>  
-              <Button className="primary jumbotron-button" onClick={this.openNewPage.bind(this,"github")}>GitHub</Button>{' '}
-              <Button className="primary jumbotron-button" onClick={this.openNewPage.bind(this,"medium")}>Medium</Button>                      
-              <hr className="my-2" />
-              <p>Developed with <span className="fa fa-heart"></span> by Ashish Deshpande</p>
-          </Jumbotron>
-        </div>
+        
         <Container>
         <form>
           <FormGroup row>
@@ -109,14 +100,15 @@ class App extends Component {
           </FormGroup>   
         </form>
 
-        {this.state.dataLoaded && 
+        {this.state.dataLoaded &&
         <div>
           <Card body outline color="secondary" className="restrict-card">
             
               <OutTable data={this.state.rows} columns={this.state.cols} tableClassName="ExcelTable2007" tableHeaderRowClass="heading" />
             
           </Card>  
-        </div>}
+        </div>        
+        }
         </Container>
       </div>
     );
