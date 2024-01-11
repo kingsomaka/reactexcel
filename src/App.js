@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import {OutTable, ExcelRenderer} from 'react-excel-renderer';
-import { Jumbotron, Col, Input, InputGroup, InputGroupAddon, FormGroup, Label, Button, Fade, FormFeedback, Container, Card } from 'reactstrap';
+import { Col, Input, InputGroup, InputGroupAddon, FormGroup, Label, Button, Fade, FormFeedback, Container, Card } from 'reactstrap';
 
 class App extends Component {
   constructor(props){
